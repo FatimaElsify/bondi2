@@ -1,0 +1,202 @@
+
+body{
+    font-family: "roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --light-color: #eff7fa;
+}
+
+.navbar{
+    background-color: var(--dark-color);
+font-weight: bold;}
+
+    .navbar .navbar-nav .nav-link{
+        color: white;
+    }
+    .navbar .navbar-nav .nav-link i{
+    }
+    .navbar .nav-link.active ,.navbar  .nav-link:hover, .navbar  .nav-link:focus{
+        color: var(--green-color);
+    }
+    .navbar .search{
+        color: var(--green-color);
+        font-size: 15px;
+        border-left: 2px var(--green-color) solid;
+    }
+    .navbar .navbar-toggler{
+        color: white;
+        border:1px  white solid;
+        font-size: 25px;
+    }
+    .navbar .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .navbar .navbar-toggler[aria-expanded="true"]{
+        border-color: var(--green-color) ;
+    }
+    .main-btn{
+        background-color: var(--red-color);
+        color: var(--yellow-color);
+        padding: 0.5rem 1rem;
+font-weight: bold;
+    }
+    .main-btn:focus{
+        background-color: var(--red-color);color: var(--yellow-color);
+    }
+    .main-btn:hover{background-color: var(--red-color);color: var(--yellow-color);}
+
+    .landing{
+        min-height: calc(100vh - 72px);
+    background-color: var(--dark-color);
+}
+
+
+.features{
+    background-color: white;
+    
+
+}
+.maintitle::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform:translateX(-50%) ;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    -webkit-transform:translateX(-50%) ;
+    -moz-transform:translateX(-50%) ;
+    -ms-transform:translateX(-50%) ;
+    -o-transform:translateX(-50%) ;
+}
+
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.features .icon-holder .number{
+    height: 12rem;
+    color:var(--light-color) ;
+
+}
+.features .icon-holder .pic{
+    color: var(--green-color);
+    font-size: 4rem;
+
+}
+.features h4{
+    color: var(--yellow-color);
+}
+
+
+.works{
+    background-color: var(--light-color);
+}
+li:active{
+
+}
+.works li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.works li:not(.active):hover{
+color: var(--red-color);
+}
+.works .box{overflow: hidden;
+    border: 5px white solid;
+}
+.works .box::after{
+    content: "Application";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background-color: #33d1cca8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition:0.5s all ease ;
+    -webkit-transition:0.5s all ease ;
+    -moz-transition:0.5s all ease ;
+    -ms-transition:0.5s all ease ;
+    -o-transition:0.5s all ease ;
+}
+.works .box:hover::after{
+    left: 0;
+}
+
+.about .descript{
+    max-width: 500px;
+}
+.team{
+    background-color: var(--light-color);
+}
+.team .box{
+    box-sizing: border-box;
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team h4{
+    background-color: var(--green-color);
+}
+.project{
+    background-color: var(--dark-color);
+}
+.contact{
+    background-color: var(--yellow-color);
+}
+.contact input{color: white;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px white solid;
+   
+}
+.contact input:focus{
+    outline: none;
+}
+.contact input::placeholder{
+    color: white;
+    font-size: 1.25rem;
+}
+.contact .btn{
+background-color: var(--dark-color);
+color: var(--yellow-color);
+}
+
+footer{
+    background-color: var(--dark-color);
+}
+footer li,p{
+    font-size: 14px;
+}
+footer .icons li {
+    height: 30px ;
+    width:30px;
+    background-color: blue;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+footer .icons a {font-size: 1rem;
+    color: white; 
+}
